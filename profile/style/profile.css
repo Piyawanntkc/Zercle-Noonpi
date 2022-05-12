@@ -1,0 +1,334 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Mono", monospace;
+  color: #444444;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+* {
+  margin: 0%;
+  padding: 0;
+}
+.intro {
+  position: static;
+  background-color: #080808;
+  color: white;
+  top: 0;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 1em;
+  position: fixed;
+}
+.logo {
+  flex: 1;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+.navbar {
+  flex: 2;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbarItem {
+  height: 2em;
+  padding-right: 1em;
+  padding-left: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+.navbarItem:hover {
+  background-color: #d4a200;
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+.my_name {
+  width: 100%;
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: row;
+}
+.name {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.hello {
+  margin-bottom: 10rem;
+}
+.hello:hover {
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+i:hover {
+  transform: scale(2);
+  transition: 0.5s;
+}
+.animate_charcter {
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s infinite;
+  font-size: 2rem;
+}
+@keyframes textclip {
+  to {
+    background-position: 200%;
+  }
+}
+.my_pic {
+  flex: 3;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.img_name {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.social_medie {
+  padding-top: 10%;
+}
+.section {
+  width: 100%;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.education {
+  width: 100%;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+}
+.about {
+  margin: 50px;
+  height: auto;
+  background-color: #ffd037;
+  display: flex;
+  flex-direction: row;
+}
+.about_pic {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  gap: 1rem;
+}
+.grid_pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.about_tab {
+  flex: 1;
+  padding: 5%;
+  color: black;
+}
+.text_About {
+  padding-top: 3%;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: 200%;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.education {
+  display: flex;
+  align-items: center;
+}
+.education_row {
+  display: flex;
+  flex-direction: row;
+}
+.education_boxtext {
+  margin: 20px;
+  text-align: center;
+  color: white;
+}
+.education_boxtext:hover {
+  color: #d4a200;
+  transition: 0.5s;
+}
+.education_row {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.education_box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.education_box:hover {
+  border: 1rem;
+  border-color: #fff800;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #202020;
+  color: white;
+}
+.my_contact {
+  flex: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.contact_me {
+  padding: 1rem;
+}
+.contact_p:hover {
+  color: #d4a200;
+  transition: 0.5s;
+}
+.social {
+  padding-top: 5rem;
+}
+.credits {
+  text-align: center;
+  color: white;
+  background-color: #080808;
+}
+label {
+  font-size: 1rem;
+}
+input {
+  padding: 1% 5%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-family: inherit;
+}
+button {
+  padding: 1.5%;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: inherit;
+}
+button:hover {
+  background-color: red;
+  transition: 0.4s;
+  cursor: pointer;
+}
+textarea {
+  padding: 1% 5%;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-family: inherit;
+}
+.contact_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.input_row {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3px;
+}
+.btn_container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3px;
+}
+@media screen and (max-width: 912px) {
+  .my_name {
+    width: 100%;
+    margin-top: 12vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .animate_charcter {
+    font-size: 1.5rem;
+  }
+  .hello {
+    margin: 5rem;
+  }
+  .name {
+    width: 100%;
+    height: auto;
+  }
+  .about {
+    margin: 5%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+  .education_row {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .education_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .social {
+    padding-bottom: 5rem;
+  }
+}
