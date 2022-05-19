@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.set_full{
+    @apply w-full h-full 
+}
+.set_flex_col_cen {
+   @apply flex flex-col items-center justify-center
+}
+.set_btn_circle {
+    @apply rounded-full set_flex_col_cen border hover:bg-btn
+}

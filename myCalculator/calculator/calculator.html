@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body  class=" w-screen h-screen font-mono bg-slate-300 set_flex_col_cen">
+    <div class=" w-1/5 h-3/4 bg-yellow-400 border-6 bg-calBg rounded-3xl set_flex_col_cen">
+        <div class="w-2/3 h-4 bg-white  rounded-b-lg "></div>
+        <div class=" flex flex-col justify-around items-end w-full h-1/4 rounded-2xl break-all bg-topCal px-5">
+            <div class="text-2xl text-white" data-previous-operand></div>
+            <div class="text-2xl text-white" data-current-operand></div>
+        </div>
+        <div class="w-full h-3/4 bg-calBg rounded-b-2xl">
+            <div class="set_full grid grid-cols-4 gap-4 p-4 text-button">
+                <div class="set_btn_circle "><button class="set_full" data-all-clear >AC</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-delete >DEL</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-percent >%</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-operation >÷</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >7</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >8</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >9</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-operation >*</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >4</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >5</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >6</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-operation >-</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >1</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >2</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >3</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-operation >+</button></div>
+                <div class="set_btn_circle col-span-2 "><button class="set_full" data-number >0</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-number >.</button></div>
+                <div class="set_btn_circle "><button class="set_full" data-equals >=</button></div>
+              </div>
+        </div>
+    </div>
+    <script src="calculate.js" defer></script>
+</body>
+</html>
